@@ -437,7 +437,7 @@ const P6 = ({ data, set, setPage }) => {
         <span className="text-sm text-gray-500">deliverable dipilih dari {allItems.length} tersedia</span>
       </div>
       <div className="flex gap-1.5 flex-wrap mb-5">
-        {showStrategy && [{id:"essential",l:"Essential",c:"#F5A623"},{id:"strategy",l:"Strategy",c:"#22c55e"},{id:"content",l:"Content",c:"#3b82f6"}].map(p => (
+        {showStrategy && [{ id: "essential", l: "Essential", c: "#F5A623" }, { id: "strategy", l: "Strategy", c: "#22c55e" }, { id: "content", l: "Content", c: "#3b82f6" }].map(p => (
           <button key={p.id} onClick={() => selectPack(p.id)} className="px-3.5 py-1.5 rounded-full bg-white cursor-pointer text-xs font-semibold" style={{ border: `1.5px solid ${p.c}`, color: p.c }}>{p.l}</button>
         ))}
         {showReport && <button onClick={() => selectPack("report")} className="px-3.5 py-1.5 rounded-full bg-white cursor-pointer text-xs font-semibold border-purple-500 text-purple-500" style={{ border: "1.5px solid #8b5cf6", color: "#8b5cf6" }}>📊 All Reports</button>}
